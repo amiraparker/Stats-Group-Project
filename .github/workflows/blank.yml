@@ -27,6 +27,6 @@ jobs:
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git add path/to/your/RMarkdownFile.html
+        git add github.com/amiraparker/Stats-Group-Project/Group Project.html
         git commit -m "Update HTML output"
         git push origin main
