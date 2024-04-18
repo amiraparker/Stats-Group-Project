@@ -1,4 +1,4 @@
-name: Render R Markdown to HTML
+name: render-rmarkdown
 
 on:
   push:
@@ -20,12 +20,12 @@ jobs:
         R -e 'install.packages(c("rmarkdown", "knitr"))'
 
     - name: Render R Markdown to HTML
-      run: R -e 'rmarkdown::render("Group Project.Rmd")'
+      run: R -e 'rmarkdown::render("Group-Project.Rmd")'
 
     - name: Commit HTML output
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git add "Group Project.html"
+        git add "Group-Project.html"
         git commit -m "Update HTML output"
         git push origin main
