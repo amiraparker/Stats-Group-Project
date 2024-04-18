@@ -1,6 +1,6 @@
 ---
 output: html_document
-title: "Group Project"
+title: "Group-Project"
 date: "2024-04-17"
 ---
 <style>
