@@ -1,5 +1,4 @@
 name: render-rmarkdown
-
 on:
   push:
     branches:
@@ -15,7 +14,7 @@ jobs:
     - name: Set up R
       uses: r-lib/actions/setup-r@v1
       with:
-        r-version: '2023.06.1+524'  # Specify your installed R version here
+        r-version: 'local'
 
     - name: Install R packages
       run: |
