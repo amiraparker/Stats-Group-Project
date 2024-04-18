@@ -26,6 +26,6 @@ jobs:
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
-        git add Group\ Project.html
+        git add "Group Project.html"
         git commit -m "Update HTML output"
         git push origin main
